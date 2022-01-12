@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -29,4 +29,95 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+#root {
+  font-family: "Lobster Two", cursive;
+  border: 1px solid cadetblue;
+  box-sizing: border-box;
+  background-color: #ebbdcb;
+  background-image: linear-gradient(180deg, #f3e9ec 20%, #B5FFFC 80%);
+  position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+  min-width: 375px;
+  max-width: 700px;
+}
+
+.TodoList > ul {
+  list-style: none;
+}
+
+.TodoListItem {
+  text-align: center;
+  padding-top: 5px;
+} 
+
+.ChildrenWraper {
+  border: 3px solid lightblue;
+  border-style: solid;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 5px;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+
+/* .ChildrenWraper:hover {
+  background-color: lightblue;
+} */
+
+input {
+  font-family: "Lobster Two", cursive;
+  border: none;
+  border-bottom: 3px solid cadetblue;
+  background: none;
+  padding-left: 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  color: -internal-light-dark(black, white) !important;
+}
+
+input[type=text] {
+  font-size: 16px;
+  width: 150px;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+  font-size: 16px;
+  width: 200px;
+}
+
+input[type=date] {
+  width: 120px;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+
+button {
+  border: none;
+  background: none;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-inline-start: 15px;
+}
+
